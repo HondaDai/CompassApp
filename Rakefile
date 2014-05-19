@@ -25,8 +25,11 @@ def parse_ext_version(dir, ext_name)
   end
 end
 
-namespace :extension
-  namespace :upgrade
+namespace :extension do
+
+
+  desc "upgrade extension"
+  task :upgrade do
 
     extension_name = %w{
       bootstrap-sass
@@ -77,6 +80,9 @@ namespace :extension
 end
 
 namespace :rawr do
+
+
+
   namespace :bundle do
     task :create_packages_dir do
       @packages_dir = File.join(File.dirname(__FILE__), 'packages')
