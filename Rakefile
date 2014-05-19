@@ -1,3 +1,6 @@
+Object.send :remove_const, :Config
+Config = RbConfig
+
 require 'rawr'
 require 'rawr/app_bundler'
 require 'rawr/exe_bundler'
