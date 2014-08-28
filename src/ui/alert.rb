@@ -6,7 +6,7 @@ class Alert
       shell.setText("Compass.app")
       shell.setBackgroundMode(Swt::SWT::INHERIT_DEFAULT)
       shell.setSize(800,480)
-      layout = Swt::Layout::GridLayout.new
+      layout = Swt::Layout::GridLayout.new(10, false)
       layout.numColumns = 2;
       shell.layout = layout
 
